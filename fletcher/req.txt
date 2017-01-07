@@ -1,0 +1,4 @@
+new publication constant?
+ensure that every one is showed without repeatition
+panaromic pictures cost?
+
