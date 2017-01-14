@@ -26,25 +26,25 @@
     </head>
     <body style="background-color:lightgrey">
       <div class="wrapper" style="background-color: #ffffff;">
-        <div style="height:120px;background-color:#c5050c;" align="center">
+        <div style="height:100px;background-color:#c5050c;" align="center">
           <p id="heading" style="color:#fff;">
-            Wisconsin Policy AnalysiLab
+            Wisconsin Policy Analysis Lab
           </p>
         </div>
-        <nav class="navbar navbar-inverse"  style="background-color:#c5050c; ">
+        <nav class="navbar navbar-inverse"  style="background-color:#c5050c; border: none;border-radius: 0px">
           <div class="container-fluid"  > 
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="myInverseNavbar2">
-              <ul class="nav navbar-nav navbar-left">
-                <li><a href="index.php">Home</a></li>
+            <div class="collapse navbar-collapse " id="myInverseNavbar2">
+              <ul class="nav navbar-nav nav-justified nav-tabs ">
+                <li><a href="index.php" class='active'>Home</a></li>
                 <li><a href="#">Projects</a></li>
                 <li><a href="schedule.php">Schedule</a></li>
                 <li><a href="members.php">Members</a></li>
                 <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true">Links <span class="caret"></span></a>
                   <ul class="dropdown-menu">
-                    <li><a href="#">La Follette</a></li>
-                    <li><a href="#">Economics</a></li>
-                    <li><a href="#">Sociology</a></li>
+                    <li><a href="http://www.lafollette.wisc.edu/">La Follette</a></li>
+                    <li><a href="http://www.econ.wisc.edu/">Economics</a></li>
+                    <li><a href="http://www.ssc.wisc.edu/soc/">Sociology</a></li>
                   </ul>
                 </li>
                 <li><a href="http://www.wisc.edu/">Wisconsin</a></li>
@@ -72,11 +72,11 @@
               <a class="left carousel-control" href="#carousel-299058" data-slide="prev"><span class="icon-prev"></span></a> <a class="right carousel-control" href="#carousel-299058" data-slide="next"><span class="icon-next"></span></a></div>
             </div>  </div>
             <div class="container">
-              <div class="col-md-12">
-                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+              <div class="col-md-12" id="projects" style="text-orientation: vertical: vertical">
+                <!-- <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
                   <div class="thumbnail"> <img src="images/new_publications.jpg" alt="Thumbnail Image 1" class="img-responsive">
                     <div class="caption">
-                      <h3 id="projects"></h3>
+                      <h3></h3>
                       <p>Some text</p>
                     </div>
                   </div>
@@ -123,7 +123,7 @@
                       <p>k.jdfgh;osdghzd;fgolkhngb</p>
                     </div>
                   </div>
-                </div>
+                </div> -->
               </div>
             </div>
             <div class="container well">
@@ -159,6 +159,32 @@
             </div>
           </footer>
 </div> 
-<script src="js/app.js"></script>
+<!-- <script src="js/app.js"></script> -->
+<script id="projecttpl" type="text/template">
+  {{#projects}}
+    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+      <div class="thumbnail"> <img src="images/{{img_src}}.jpg" alt="Thumbnail Image 1" class="img-responsive" href="{{url}}">
+        <div class="caption">
+          <h4>{{heading}}</h4>
+          <p>{{short_des}}</p>
+        </div>
+      </div>
+    </div>
+  {{/projects}}
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.cycle/3.0.3/jquery.cycle.all.min.js" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+  $(function () {
+    $.getJSON('https://fletcher-e4553.firebaseio.com/.json',function(data){
+      data.projects.sort(function (a, b) {return Math.random() - 0.5;});
+      data.projects=data.projects.slice(0,6);
+      var template  = $('#projecttpl').html();
+      var html =  Mustache.to_html(template,  data);
+      $('#projects').html(html);
+    });
+  });
+</script>
 </body>
 </html>
