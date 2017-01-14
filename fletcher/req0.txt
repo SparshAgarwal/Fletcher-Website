@@ -1,0 +1,26 @@
+
+I’m interested in having a website created for my projects and research group that has a lot of the structure as this website:
+
+http://ndg.asc.upenn.edu
+
+The information I’d be migrating to the new website is here:
+http://ssc.wisc.edu/~jfletcher/Website/Lab/
+
+
+On color—Red/white are key colors (since these are UW colors).  
+
+On boxes—each will be a project, with a stock photo of some sort that is related to the topic of the project and a short description.  Each box will link to a new page for the project that will include a fuller description and info on the students working on the project.  
+
+I’d like a box in the rotation to be called “new publication”—which will link to a journal article
+
+I’d also like a page of the student workers with the same format of boxes (one for each student), with a picture of each student and their info.  you can probably grab the info that I have for the students now to start
+
+on photos for the slider—you might pull from this page to start (no football pix)?
+http://www.replayphotos.com/wisconsinphotos/panoramas-pictures/_P___0001024.cfm
+
+Here is some text I will use for one of the projects, just as an example.  
+http://wtgrantfoundation.org/browse-grants#/grant/184625
+I’ll want to have a picture—we can start with this one: 1000 × 667 - natcom.org
+I’ll want the box for this project to be linked with a webpage for the project, and this page will look somewhat like the example we’ve discussed
+Otherwise, the details of each project—I’ll need to supply these
+Jason

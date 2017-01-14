@@ -1,0 +1,90 @@
+{	"projects"	:
+	[
+		{	
+			"heading"	:	"New Publications",
+			"url"	:	"zjdgbdzv",
+			"short_des"	:	"kjxhv",
+			"img_src"	:	"zzdjvzdm"
+		},
+		{	
+			"heading"	:	"How big are the the Impacts of Children's Neighborhoods on Adult Health?",
+			"url"	:	"zjdgbdzv",
+			"short_des"	:	"kjxhv",
+			"img_src"	:	"zzdjvzdm"
+		},
+		{	
+			"heading"	:	"Are there Interactions between Environments and Genetic Variants in Determining Adult Cogntive and Labor Market Outcomes?",
+			"url"	:	"zjdgbdzv",
+			"short_des"	:	"kjxhv",
+			"img_src"	:	"zzdjvzdm"
+		},
+		{	
+			"heading"	:	"How do schools shape the intergenerational transmission of socioeconomic status?",
+			"url"	:	"zjdgbdzv",
+			"short_des"	:	"kjxhv",
+			"img_src"	:	"zzdjvzdm"
+		},
+		{	
+			"heading"	:	"What are the mechanisms that link earlier age at school entry with later health and socioeconomic status?",
+			"url"	:	"zjdgbdzv",
+			"short_des"	:	"kjxhv",
+			"img_src"	:	"zzdjvzdm"
+		},
+		{	
+			"heading"	:	"How do adults choose their spouses?",
+			"url"	:	"zjdgbdzv",
+			"short_des"	:	"kjxhv",
+			"img_src"	:	"zzdjvzdm"
+		},
+		{	
+			"heading"	:	"How important are spousal peer effects?",
+			"url"	:	"zjdgbdzv",
+			"short_des"	:	"kjxhv",
+			"img_src"	:	"zzdjvzdm"
+		},
+		{	
+			"heading"	:	"What are the impacts of schools vs neighborhoods on childhood obesity",
+			"url"	:	"zjdgbdzv",
+			"short_des"	:	"kjxhv",
+			"img_src"	:	"zzdjvzdm"
+		}
+	],
+	"events"	:
+	[
+		{	
+			"date"	:	"New Publications",
+			"time"	:	"zjdgbdzv",
+			"heading"	:	"zjdgbdzv",
+			"short_des"	:	"kjxhv",
+			"location"	:	"zzdjvzdm"
+		},
+		{	
+			"date"	:	"New Publications",
+			"time"	:	"zjdgbdzv",
+			"heading"	:	"zjdgbdzv",
+			"short_des"	:	"kjxhv",
+			"location"	:	"zzdjvzdm"
+		},
+		{	
+			"date"	:	"New Publications",
+			"time"	:	"zjdgbdzv",
+			"heading"	:	"zjdgbdzv",
+			"short_des"	:	"kjxhv",
+			"location"	:	"zzdjvzdm"
+		},
+		{	
+			"date"	:	"New Publications",
+			"time"	:	"zjdgbdzv",
+			"heading"	:	"zjdgbdzv",
+			"short_des"	:	"kjxhv",
+			"location"	:	"zzdjvzdm"
+		},
+		{	
+			"date"	:	"New Publications",
+			"time"	:	"zjdgbdzv",
+			"heading"	:	"zjdgbdzv",
+			"short_des"	:	"kjxhv",
+			"location"	:	"zzdjvzdm"
+		}
+	]
+}
