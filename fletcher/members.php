@@ -26,7 +26,7 @@
 				<div class="collapse navbar-collapse" id="myInverseNavbar2">
 					<ul class="nav navbar-nav nav-justified nav-tabs">
 						<li><a href="index.php">Home</a></li>
-						<li><a href="#">Projects</a></li>
+						<li><a href="projects.php">Projects</a></li>
 						<li><a href="schedule.php">Schedule</a></li>
 						<li><a href="members.php" class="active">Members</a></li>
 						<li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true">Links <span class="caret"></span></a>
@@ -45,242 +45,8 @@
 		</nav>
 
 		<div class="container">
-			<div class="col-md-12">	
-				<!-- <?php
-				$myfile = fopen("data.txt", "r") or die("Unable to open file!");
-				while (!feof($myfile)) 
-				{
-					$line_of_text = fgets($myfile);
-					$parts = explode('|', $line_of_text);
-					if($parts[0]=="heading")
-					{
-						echo "<div class='member_divisions' >";
-						echo "<h2 style='color:#c5050c'>".$parts[1]."</h2>";
-					}
-					if($parts[0]=="data")
-					{
-						echo "<div class='col-lg-4 col-md-4 col-sm-6 col-xs-6 maxheightbox'>";
-						echo "<div class='thumbnail' > <img src='".$parts[1]."' alt='Thumbnail Image 1' class='img-responsive'>";
-						echo "<div class='caption'>";
-						echo "<h3>".$parts[2]."</h3>";
-						echo "<p>".$parts[3]."</p>";
-						echo "</div></div></div>";
-					}
-					if($parts[0]=="end")
-					{
-						echo "</div>";
-					}
-				}
-				fclose($myfile);
-				?>  -->
-				<div class="member_divisions">
-					<h2 style="color:#c5050c">Professor</h2>
-					<div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 maxheightbox">
-						<div class="thumbnail" > <img src="images/s0.jpg" alt="Thumbnail Image 1" class="img-responsive">
-							<div class="caption">
-								<h3>Jason Fletcher</h3>
-								<p>Jason joined UW-Madison as an Associate Professor of Public Affairs, Sociology and Applied Economics in 2013.
-									 He was a Robert Wood Johnson Foundation Health & Society Scholar at Columbia University between 2010-2012. You can see his website for more about his work.</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="member_divisions">
-					<h2 style="color:#c5050c">Graduate Student Research Assistants</h2>
-					<div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 maxheightbox ">
-						<div class="thumbnail"> <img src="images/s1.png" alt="Thumbnail Image 1" class="img-responsive">
-							<div class="caption">
-								<h3>Jinho Kim</h3>
-								<p>Jinho is a fifth year PhD Student in Sociology.
-									Jinho and Jason are working on multiple projects related to social network analysis and family dynamics</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 maxheightbox">
-						<div class="thumbnail" style="background-color: #ad050b;"> <img src="images/s2.png" alt="Thumbnail Image 1" class="img-responsive">
-							<div class="caption">
-								<h3>Joel Han</h3>
-								<p>Joel is a fifth-year PhD student in Economics. His interests in reseach include the determinants of socio-economic inequality and mobility, which include education and neighborhoods.</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 maxheightbox">
-						<div class="thumbnail"> <img src="images/s3.jpg" alt="Thumbnail Image 1" class="img-responsive">
-							<div class="caption">
-								<h3>Angela Forgues</h3>
-								<p>Angela is a fourth-year PhD student in Sociology
-									Angela and Jason are working on gene-environment interactions research
-									Angela presented some of this work with Justin Cook at PAA in 2016</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 maxheightbox">
-						<div class="thumbnail" style="background-color: #ad050b;"> <img src="images/s4.jpg" alt="Thumbnail Image 1" class="img-responsive">
-							<div class="caption">
-								<h3>Jessica Polos</h3>
-								<p>	Jessica and Jason are working on examining the intergeneration transmission of health and education and the intersection of genetics.</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 maxheightbox">
-						<div class="thumbnail"> <img src="images/s5.jpg" alt="Thumbnail Image 1" class="img-responsive">
-							<div class="caption">
-								<h3>Maria Serakos</h3>
-								<p>Maria is a first year PhD student in Social Work. She recently completed her MPA at La Follette. </p>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 maxheightbox">
-						<div class="thumbnail" style="background-color: #ad050b;"> <img src="images/s6.jpg" alt="Thumbnail Image 1" class="img-responsive">
-							<div class="caption">
-								<h3>Jingying He</h3>
-								<p>Jingying is a third year PhD student in Sociology.
-									Jingying and Jason are working on projects related to multigenerational effects of early conditions. </p>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 maxheightbox">
-						<div class="thumbnail"> <img src="images/s7.jpg" alt="Thumbnail Image 1" class="img-responsive">
-							<div class="caption">
-								<h3>Jihye Kam</h3>
-								<p>Jihye is a fifth year PhD student in Education Leadership and Policy Analysis.
-										Jihye and Jason are working on projects related to multigenerational effects of early conditions.  </p>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 maxheightbox">
-						<div class="thumbnail" style="background-color: #ad050b;"> <img src="images/s8.jpg" alt="Thumbnail Image 1" class="img-responsive">
-							<div class="caption">
-								<h3>Evan Crawford</h3>
-								<p>Evan is a fourth year PhD student in Political Science.
-											Evan and Jason are working on the long term implications of voting laws.</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 maxheightbox">
-						<div class="thumbnail"> <img src="images/s9.jpg" alt="Thumbnail Image 1" class="img-responsive">
-							<div class="caption">
-								<h3>Won-tak Joo</h3>
-								<p>Won-tak is a first year PhD student in Sociology.
-									Won-tak and Jason are working on projects related to social network analysis and college rankings as well as impacts of network position on adolescent outcomes.  </p>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 maxheightbox">
-						<div class="thumbnail"> <img src="images/s10.jpg" alt="Thumbnail Image 1" class="img-responsive">
-							<div class="caption">
-								<h3>Irina Shaorshadze</h3>
-								<p>Irina is a fifth year PhD student in the Economics Department.
-									Jason and Irina are working on a project examining peer effects for immigrant students. </p>
-							</div>
-						</div>
-					</div>
-				</div>	
-				<div class="member_divisions">
-					<h2 style="color:#c5050c">Master Students</h2>
-					<div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 maxheightbox">
-						<div class="thumbnail" style="background-color: #ad050b;"> <img src="images/s11.jpg" alt="Thumbnail Image 1" class="img-responsive">
-							<div class="caption">
-								<h3>Anshul Purohit</h3>
-								<p>Anshul is a masters student in computer science.
-									Anshul and Jason are working on projects that intergrate machine learning into policy analysis. </p>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 maxheightbox">
-						<div class="thumbnail"> <img src="images/s12.jpg" alt="Thumbnail Image 1" class="img-responsive">
-							<div class="caption">
-								<h3>Cody Oltmans</h3>
-								<p>Cody is a masters student in the La Follette School of Public Affairs.
-									Jason and Cody are working on a project examining educational mobility patterns in the US.  </p>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 maxheightbox">
-						<div class="thumbnail" style="background-color: #ad050b;"> <img src="images/s13.jpg" alt="Thumbnail Image 1" class="img-responsive">
-							<div class="caption">
-								<h3>Max Pardo</h3>
-								<p>Max is a masters student in the La Follette School of Public Affairs
-									Jason and Max are working on several projects </p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="member_divisions">
-					<h2 style="color:#c5050c">Alumni</h2>
-					<div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 maxheightbox">
-						<div class="thumbnail" > <img src="images/s14.png" alt="Thumbnail Image 1" class="img-responsive">
-							<div class="caption">
-								<h3>Ryne Marksteiner</h3>
-								<p>Ryne received hi PhD in Economics from UW in 2016.
-									He was a member of WiscPal from 2013-2016. He now works at the FTC.
-								</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 maxheightbox">
-						<div class="thumbnail" style="background-color: #ad050b;"> <img src="images/s15.jpg" alt="Thumbnail Image 1" class="img-responsive">
-							<div class="caption">
-								<h3>Taehoon Kim</h3>
-								<p>Taehoon is a fifth year PhD student in the Economics Department. His main fields are labor and public economics.His current focuse is on early childhood education and its long-term effect. </p>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 maxheightbox">
-						<div class="thumbnail" > <img src="images/s16.jpg" alt="Thumbnail Image 1" class="img-responsive">
-							<div class="caption">
-								<h3>Sean Lewis-Faupel</h3>
-								<p>Sean received his PhD in Economics from UW in 2016. He was a member of WiscPal from 2013-2015.
-									He now works at Treasury.Sean presented joint work at APPAM in 2015 </p>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 maxheightbox">
-						<div class="thumbnail" style="background-color: #ad050b;"> <img src="images/s17.jpg" alt="Thumbnail Image 1" class="img-responsive">
-							<div class="caption">
-								<h3>Sebastian Daza</h3>
-								<p>Sebastian is a sixth-year PhD student in Sociology at UW. 
-									He was involved with WiscPal between 2014-2016.Sebastian presented joint work on the impacts of pregnancy on deliquency at PAA in 2015.</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 maxheightbox">
-						<div class="thumbnail" > <img src="images/s18.jpg" alt="Thumbnail Image 1" class="img-responsive">
-							<div class="caption">
-								<h3>Justin Cook (Post Doctoral Associate)</h3>
-								<p>Justin's work focuses on the health and economic impacts of genetic variation. At the country level, he explores the economic effects, both historic and contemporary, of differential genetic adaptations to the adoption of agriculture</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 maxheightbox">
-						<div class="thumbnail" style="background-color: #ad050b;"> <img src="images/s19.jpg" alt="Thumbnail Image 1" class="img-responsive">
-							<div class="caption">
-								<h3>Norma Padron</h3>
-								<p>Norma received her PhD in Health Policy and Management at Yale University in 2014.
-									Her main interests are on the effects from involuntary parental job-loss and children's health and development outcomes. She is also interested in the determinants of marriage formation and its effects on inequality.
-								</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 maxheightbox">
-						<div class="thumbnail"> <img src="images/s20.jpg" alt="Thumbnail Image 1" class="img-responsive">
-							<div class="caption">
-								<h3>Duy Do</h3>
-								<p>Duy completed his undergraduate degree in economics at the University of Wisconsin-Madison in 2014.
-									Duy and Jason worked on a project examining the impacts of pesticides on children's health in Vietnam </p>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 maxheightbox">
-						<div class="thumbnail" style="background-color: #ad050b;"> <img src="images/s21.jpg" alt="Thumbnail Image 1" class="img-responsive">
-							<div class="caption">
-								<h3>Keo Lo</h3>
-								<p>Keo Lo was a MPA student at the La Follette School of Public Affairs and graduated in May 2015.
-									Keo is a Program and Planning Analyst at Department of Children and Families</p>
-							</div>
-						</div>
-					</div>
-				</div>
+			<div class="col-md-12" id="members">	
+				<!-- members -->
 			</div>
 		</div>
 		<div class="container well">
@@ -318,18 +84,22 @@
 		<!-- Include all compiled plugins (below), or include individual files as needed --> 
 		<script src="js/bootstrap.js"></script>
 	</div>
-<!-- <script id="projecttpl" type="text/template">
-  {{#members}}
-  	<div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 maxheightbox">
-						<div class="thumbnail" > <img src="images/s16.jpg" alt="Thumbnail Image 1" class="img-responsive">
-							<div class="caption">
-								<h3>Sean Lewis-Faupel</h3>
-								<p>Sean received his PhD in Economics from UW in 2016. He was a member of WiscPal from 2013-2015.
-									He now works at Treasury.Sean presented joint work at APPAM in 2015 </p>
-							</div>
-						</div>
+<script id="memberstpl" type="text/template">
+{{#members}}
+	<div class="member_divisions">
+		<h2 style="color:#333">{{heading}}</h2>
+		{{#values}}
+			<div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 maxheightbox">
+				<div class="thumbnail" > <img src="images/members/{{img_src}}" alt="Thumbnail Image 1" class="img-responsive">
+					<div class="caption">
+						<h3>{{name}}</h3>
+						<p>{{short_des}}</p>
 					</div>
-  {{/members}}
+				</div>
+			</div>
+		{{/values}}
+	</div>
+{{/members}}
 </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" type="text/javascript"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.cycle/3.0.3/jquery.cycle.all.min.js" type="text/javascript"></script>
@@ -337,13 +107,11 @@
 <script type="text/javascript">
   $(function () {
     $.getJSON('https://fletcher-e4553.firebaseio.com/.json',function(data){
-      data.projects.sort(function (a, b) {return Math.random() - 0.5;});
-      data.projects=data.projects.slice(0,6);
-      var template  = $('#projecttpl').html();
+      var template  = $('#memberstpl').html();
       var html =  Mustache.to_html(template,  data);
-      $('#projects').html(html);
+      $('#members').html(html);
     });
   });
-</script> -->
+</script>
 </body>
 </html>

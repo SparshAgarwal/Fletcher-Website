@@ -10,6 +10,8 @@
 	<!-- Bootstrap -->
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link href="index.css" rel="stylesheet" type="text/css">
+
+
 </head>
 <body style="background-color:lightgrey">
 	<div class="wrapper" style="background-color: #ffffff;">
@@ -25,7 +27,7 @@
 					<ul class="nav navbar-nav nav-justified nav-tabs">
 						<li><a href="index.php">Home</a></li>
 						<li><a href="projects.php">Projects</a></li>
-						<li><a href="schedule.php" class="active">Schedule</a></li>
+						<li><a href="schedule.php">Schedule</a></li>
 						<li><a href="members.php">Members</a></li>
 						<li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true">Links <span class="caret"></span></a>
 							<ul class="dropdown-menu">
@@ -37,14 +39,14 @@
 						<li><a href="http://www.wisc.edu/">Wisconsin</a></li>
 					</ul>
 				</div>
-				<!-- /.navbar-collapse -->
-				</div>
+				<!-- /.navbar-collapse --> 
+			</div>
 			<!-- /.container-fluid --> 
 		</nav>
 
 		<div class="container">
-			<div class="col-md-12" align="center" id="events"> 
-				<!-- events -->
+			<div class="col-md-12" id="project_details">	
+				<!-- project_details -->
 			</div>
 		</div>
 		<div class="container well">
@@ -82,48 +84,64 @@
 		<!-- Include all compiled plugins (below), or include individual files as needed --> 
 		<script src="js/bootstrap.js"></script>
 	</div>
-<script id="eventstpl" type="text/template">
-  {{#events}}
-    <div class="event" style="color: #333;border-top: 1px solid #efefef; clear:	both; font-size: 1em;">
-		<div style="width: 30%;padding: 5px 5px 0 0;align-items: right;	">
-			<p style="float:right; clear:right;">{{day}}</p>
-			<p style="float:right; clear:right;">{{hours}}:{{minutes}}</p>
-		</div>
-		<div style="width: 70%;padding: 5px 0 0 20px;">
-			<p style="float:left; clear:left;font-size: 1.1em;font-weight: bold;color: #c5050c">{{heading}}</a></p>
-			<p style="float:left; clear:left;text-align: left;">{{short_des}}</p>
-			<p style="float:left; clear:left;font-size: 1.05em;color: #c5050c">{{location}}</a></p>
-		</div>
+<script id="project_detailtpl" type="text/template">
+	{{}}
+	<div style="color: #333">
+		<section>
+			<article>
+				<div style="padding: 10px;padding-top: 0px;margin: 0px;">
+					<header >
+						<h1 style="color: #c5050c;font-weight: bold; margin-top: 0px; ">{{heading}}</h1>
+					</header>
+					<div style="padding-left: 50px;padding-top: 10px;">
+						<article>
+							<h4 style="padding: 10px;">Publications</h4>
+							<nav>
+								<ul>
+									{{#publications}}
+									<a href="{{url}}" style="color: #c5050c;"><li>{{heading}}</li></a>
+									{{/publications}}
+								</ul>
+							</nav>
+							<h4 style="padding: 10px;">Research Summary</h4>
+							<p style="color: #8c8c8c;padding-left: 30px;">{{research_summary}}</p>
+							<p style="padding: 20px;"><img class="size-full wp-image-424 aligncenter" src="images/projects/{{study_img}}" sizes="(max-width: 680px) 100vw, 680px" width="680" height="290"></p>
+							<nav>
+								<h4 style="padding: 10px;">Related Resources</h4>
+								<ul>
+									{{#related_resources}}
+									<li><a href="{{url}}" style="color: #c5050c">{{heading}}</a></li>
+									{{/related_resources}}
+								</ul>
+							</nav>
+							<h4 style="padding: 10px;">Funding</h4>
+							<p style="color: #8c8c8c;padding-left: 30px;"">{{funding}}</p>
+						</article>
+						<div></div>
+					</div>
+				</div>
+			</article>
+		</section>
 	</div>
-  {{/events}}
+	{{}}
 </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" type="text/javascript"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.cycle/3.0.3/jquery.cycle.all.min.js" type="text/javascript"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.min.js" type="text/javascript"></script>
 <script type="text/javascript">
-$(function () {
+  $(function () {
     $.getJSON('https://fletcher-e4553.firebaseio.com/.json',function(data){
-    	//converting string date to javascript date
-    	for (var i=0; i<data.events.length; i++){
-    		var date_string	=	data.events[i].date_time;
-    		var date	=	new Date(date_string);
-    		var day	=	date.getDate();
-    		var hours	=	date.getHours();
-    		var minutes	=	date.getMinutes();
-    		data.events[i].day	=	date;
-    		data.events[i].hours	=	hours;
-    		data.events[i].minutes	=	minutes;
+    	for(var i=0; i<data.projects.length;i++){
+    		var current_project	=	JSON.stringify(data.projects[i].heading);
+    		if(current_project=="\"How do adults choose their spouses?\""){
+    			data.projects	=	data.projects[i];
+    		}
     	}
-
-		function custom_sort(a, b) {
- 			return new Date(a.date_time).getTime() - new Date(b.date_time).getTime();
- 		}
- 		data.events.sort(custom_sort);
-    	var template  = $('#eventstpl').html();
-    	var html =  Mustache.to_html(template,  data);
-    	$('#events').html(html);
+    	var template  = $('#project_detailtpl').html();
+    	var html =  Mustache.to_html(template,  data.projects);
+    	$('#project_details').html(html);
     });
-});
+  });
 </script>
 </body>
 </html>

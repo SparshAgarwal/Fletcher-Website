@@ -1,0 +1,34 @@
+heading|Professor
+data|images/s0.jpg|Jason Fletcher|Jason joined UW-Madison as an Associate Professor of Public Affairs, Sociology and Applied Economics in 2013. He was a Robert Wood Johnson Foundation Health & Society Scholar at Columbia University between 2010-2012. You can see his website for more about his work.
+end|
+heading|Graduate Student Research Assistants
+data|images/s1.png|Jinho Kim|Jinho is a fifth year PhD Student in Sociology.Jinho and Jason are working on multiple projects related to social network analysis and family dynamics
+end|
+
+<!-- <?php
+				$myfile = fopen("data.txt", "r") or die("Unable to open file!");
+				while (!feof($myfile)) 
+				{
+					$line_of_text = fgets($myfile);
+					$parts = explode('|', $line_of_text);
+					if($parts[0]=="heading")
+					{
+						echo "<div class='member_divisions' >";
+						echo "<h2 style='color:#c5050c'>".$parts[1]."</h2>";
+					}
+					if($parts[0]=="data")
+					{
+						echo "<div class='col-lg-4 col-md-4 col-sm-6 col-xs-6 maxheightbox'>";
+						echo "<div class='thumbnail' > <img src='".$parts[1]."' alt='Thumbnail Image 1' class='img-responsive'>";
+						echo "<div class='caption'>";
+						echo "<h3>".$parts[2]."</h3>";
+						echo "<p>".$parts[3]."</p>";
+						echo "</div></div></div>";
+					}
+					if($parts[0]=="end")
+					{
+						echo "</div>";
+					}
+				}
+				fclose($myfile);
+				?>  -->
