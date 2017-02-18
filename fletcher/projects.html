@@ -14,7 +14,36 @@
 
 </head>
 <body style="background-color:lightgrey">
-	<div class="wrapper" style="background-color: #ffffff;">
+
+	<div id="projectsbody" class="wrapper" style="background-color: #ffffff;">
+		
+		
+
+		
+		<!--script-->
+
+
+
+
+		<footer class="text-center">
+			<div>
+				<div class="row">
+					<div class="col-xs-12">
+						<p>Developed by Sparsh Agarwal</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+		<script src="js/jquery-1.11.3.min.js"></script> 
+		<!-- Include all compiled plugins (below), or include individual files as needed --> 
+		<script src="js/bootstrap.js"></script>
+	</div>
+
+
+
+
+	<script id="projectstpl" type="text/template">
 		<div style="height:100px;background-color:#c5050c;" align="center">
 			<p id="heading" style="color:#fff;">
 				Wisconsin Policy Analysis Lab
@@ -46,7 +75,19 @@
 
 		<div class="container">
 			<div class="col-md-12" id="project_desc">	
-				<!-- project_desc -->
+				{{#projects}}
+				<table cellspacing="2" cellpadding="2" border="0" class="project_table">
+					<tbody>
+						<tr>
+							<td style="width: 7.5em;margin: 5px 15px 0 15px;float: left;"><a href="{{url}}"><img src="images/{{img_src}}" alt="Thumbnail 1" width="98" height="98"></a></td>
+							<td><a href="{{url}}">{{heading}}</a><p></p>
+								<p>{{medium_desc}}</p>
+								<hr>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				{{/projects}}
 			</div>
 		</div>
 		<div class="container well">
@@ -70,46 +111,19 @@
 				</div>
 			</div>
 		</div>
-		<footer class="text-center">
-			<div>
-				<div class="row">
-					<div class="col-xs-12">
-						<p>Developed by Sparsh Agarwal</p>
-					</div>
-				</div>
-			</div>
-		</footer>
-		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
-		<script src="js/jquery-1.11.3.min.js"></script> 
-		<!-- Include all compiled plugins (below), or include individual files as needed --> 
-		<script src="js/bootstrap.js"></script>
-	</div>
-<script id="project_desctpl" type="text/template">
-{{#projects}}
-<table cellspacing="2" cellpadding="2" border="0" class="project_table">
-	<tbody>
-		<tr>
-			<td style="width: 7.5em;margin: 5px 15px 0 15px;float: left;"><a href="{{url}}"><img src="images/{{img_src}}" alt="Thumbnail 1" width="98" height="98"></a></td>
-			<td><a href="{{url}}">{{heading}}</a><p></p>
-				<p>{{medium_desc}}</p>
-				<hr>
-			</td>
-		</tr>
-	</tbody>
-</table>
-{{/projects}}
-</script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" type="text/javascript"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.cycle/3.0.3/jquery.cycle.all.min.js" type="text/javascript"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.min.js" type="text/javascript"></script>
-<script type="text/javascript">
-  $(function () {
-    $.getJSON('https://website-c08a3.firebaseio.com/.json',function(data){
-      var template  = $('#project_desctpl').html();
-      var html =  Mustache.to_html(template,  data);
-      $('#project_desc').html(html);
-    });
-  });
-</script>
+
+	</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" type="text/javascript"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.cycle/3.0.3/jquery.cycle.all.min.js" type="text/javascript"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.min.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		$(function () {
+			$.getJSON('https://website-1b41e.firebaseio.com/.json',function(data){
+				var template  = $('#projectstpl').html();
+				var html =  Mustache.to_html(template,  data);
+				$('#projectsbody').html(html);
+			});
+		});
+	</script>
 </body>
 </html>
