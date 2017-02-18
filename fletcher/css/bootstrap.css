@@ -6818,3 +6818,32 @@ button.close {
   }
 }
 /*# sourceMappingURL=bootstrap.css.map */
+
+
+/*Self CSS*/
+.project-container {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-content: flex-start;
+  max-height: 400px;
+}
+.project-item {
+  flex: 1;
+  align-content: stretch;
+  justify-content: stretch;
+}
+.member-container {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-content: flex-start;
+  max-height: 1200px;
+}
+.member-item {
+  flex: 1;
+  align-content: stretch;
+  justify-content: stretch;
+}
