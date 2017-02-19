@@ -1,5 +1,5 @@
 {
-  "MaxHeightForProjectsContainer" : "400px",
+  "MaxHeightForProjectsContainer" : "500px",
   "events" : [ {
     "date_time" : "2017-01-22T22:28:56.782Z",
     "heading" : "IRP",
@@ -27,7 +27,7 @@
     "short_des" : "Jason Fletcher, Evan Crawford, Jessica Polos, Cody Oltmans, Anshul Purohit, Won-tak Joo, Jingying He, Jinho Kim, Max Pardo, Jihye Kam"
   } ],
   "members" : [ {
-    "MaxHeightForMemberContainer" : "900px",
+    "MaxHeightForMemberContainer" : "1300px",
     "heading" : "Professor and Ph.D. Students",
     "values" : [ {
       "img_src" : "fletcher.jpg",
@@ -71,7 +71,7 @@
       "url" : "zjdgbdzv"
     } ]
   }, {
-    "MaxHeightForMemberContainer" : "900px",
+    "MaxHeightForMemberContainer" : "1100px",
     "heading" : "Masters and Undergraduate Students",
     "values" : [ {
       "img_src" : "anshul.jpg",
@@ -137,7 +137,7 @@
     "research_summary" : "This article examines the effect of delinquent peers on an individual’s criminal activity by leveraging quasi-experimental variation in exposure to peers, separating confounding and causal effects. In particular, we examine the role of wider peer networks (i.e., classmates) as a critical source of influence on adolescents’ delinquent behavior. Using a combined instrumental variables/fixed effects methodology, we address important methodological challenges in estimating peer effects. Results suggest that increasing the proportion of peers who engage in criminal activities by 5% will increase the likelihood an individual engages in criminal activities by 3 percentage points.",
     "short_des" : "kjxhv",
     "study_img" : "new_publications.jpg",
-    "url" : "p_new_publication.html"
+    "url" : "project_detail.html"
   }, {
     "funding" : "mnvbkjv,",
     "heading" : "How Important are Children's Neighborhoods for Adult Health?",
@@ -160,7 +160,7 @@
     "research_summary" : "nmbvkj,mv,v",
     "short_des" : "Using sibling and classmate correlations to understand sources of adult health differences",
     "study_img" : "ddz,bm",
-    "url" : "p_how_big.html"
+    "url" : "project_detail.html"
   }, {
     "funding" : "mnvbkjv,",
     "heading" : "Are there Interactions between Environments and Genetic Variants in Determining Adult Cogntive and Labor Market Outcomes?",
@@ -183,7 +183,7 @@
     "research_summary" : "nmbvkj,mv,v",
     "short_des" : "kjxhv",
     "study_img" : "ddz,bm",
-    "url" : "p_are_there.html"
+    "url" : "project_detail.html"
   }, {
     "funding" : "mnvbkjv,",
     "heading" : "How do schools shape the intergenerational transmission of socioeconomic status?",
@@ -206,7 +206,7 @@
     "research_summary" : "nmbvkj,mv,v",
     "short_des" : "kjxhv",
     "study_img" : "ddz,bm",
-    "url" : "p_how_do.html"
+    "url" : "project_detail.html"
   }, {
     "funding" : "mnvbkjv,",
     "heading" : "The Genome Factor",
@@ -229,7 +229,7 @@
     "research_summary" : "nmbvkj,mv,v",
     "short_des" : "Princeton University Press",
     "study_img" : "ddz,bm",
-    "url" : "p_what_are.html"
+    "url" : "project_detail.html"
   }, {
     "funding" : "mnvbkjv,",
     "heading" : "How do adults choose their spouses?",
@@ -252,7 +252,7 @@
     "research_summary" : "nmbvkj,mv,v",
     "short_des" : "kjxhv",
     "study_img" : "spouses.jpg",
-    "url" : "p_how_do_adults.html"
+    "url" : "project_detail.html"
   }, {
     "funding" : "NIDA R03 Causal Spousal Spillover Effects 07/01/2015-06/30/2017 $144,000 PI: Fletcher Co-I: Weimer Student: Ryne Marksteiner",
     "heading" : "How important are spousal peer effects?",
@@ -275,7 +275,7 @@
     "research_summary" : "Current methods of cost effectiveness analysis implicitly assume zero spillovers among social ties. This can underestimate the benefits of health interventions and misallocate resources toward interventions with lower comprehensive effects. We discuss the implications of social spillovers for program evaluation and document the first evidence of causal spillovers of health behaviors between spouses by leveraging experimental data from the Lung Health Study (smoking) and COMBINE Study (drinking). We find large decreases in spousal substance use from treatments with a therapy component, which reduces the incremental cost effectiveness ratios of some treatments by 12 to 18 percent.",
     "short_des" : "kjxhv",
     "study_img" : "spousesmoking.jpg",
-    "url" : "p_how_important.html"
+    "url" : "project_detail.html"
   }, {
     "funding" : "mnvbkjv,",
     "heading" : "Multigenerational Effects of Health Shocks",
@@ -298,7 +298,7 @@
     "research_summary" : "nmbvkj,mv,v",
     "short_des" : "kjxhv",
     "study_img" : "ddz,bm",
-    "url" : "p_what_are_the_impact.html"
+    "url" : "project_detail.html"
   }, {
     "funding" : "mnvbkjv",
     "heading" : "New Publications",
@@ -321,6 +321,6 @@
     "research_summary" : "nmbvkj,mv,v",
     "short_des" : "kjxhv",
     "study_img" : "ddz,bm",
-    "url" : "zjdgbdzv"
+    "url" : "project_detail"
   } ]
 }
