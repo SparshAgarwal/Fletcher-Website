@@ -120,7 +120,7 @@
 			localStorage.setItem('myStorage', JSON.stringify(pName));
 		}
 		$(function () {
-			$.getJSON('https://website-c08a3.firebaseio.com/.json',function(data){
+			$.getJSON('data.json',function(data){
 				var template  = $('#projectstpl').html();
 				var html =  Mustache.to_html(template,  data);
 				$('#projectsbody').html(html);

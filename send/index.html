@@ -146,7 +146,7 @@
       localStorage.setItem('myStorage', JSON.stringify(pName));
     }
     $(function () {
-      $.getJSON('https://website-1b41e.firebaseio.com/.json',function(data){
+      $.getJSON('data.json',function(data){
         data.projects.sort(function (a, b) {return Math.random() - 0.5;});
         data.projects=data.projects.slice(0,5);
         var template  = $('#indextpl').html();
