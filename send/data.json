@@ -1,5 +1,5 @@
 {
-  "MaxHeightForProjectsContainer" : "500px",
+  "MaxHeightForProjectsContainer" : "915px",
   "aboutUs" : "How Important are Children's Neighborhoods for Adult Health? Using sibling and classmate correlations to understand sources of adult health differences.",
   "contactUs" : {
     "address" : "4430 Sewell Social Sciences, UW-Madison, USA",
@@ -35,42 +35,42 @@
     "MaxHeightForMemberContainer" : "1300px",
     "heading" : "Professor and Ph.D. Students",
     "values" : [ {
-      "img_src" : "fletcher.jpg",
+      "img_src" : "s0.jpg",
       "name" : "Jason Fletcher",
       "short_des" : "Jason joined UW-Madison as an Associate Professor of Public Affairs, Sociology and Applied Economics in 2013. He was a Robert Wood Johnson Foundation Health & Society Scholar at Columbia University between 2010-2012. You can see his website for more about his work.",
       "url" : "zjdgbdzv"
     }, {
-      "img_src" : "jinho.png",
+      "img_src" : "s1.png",
       "name" : "Jinho Kim",
       "short_des" : "Jinho is a fifth year PhD Student in Sociology.  Jinho and Jason are working on multiple projects related to social network analysis and family dynamics",
       "url" : "https://www.jkim1.com"
     }, {
-      "img_src" : "joel.png",
+      "img_src" : "s2.png",
       "name" : "Joel Han",
       "short_des" : "Joel is a fifth-year PhD student in Economics. His interests in research include the determinants of socio-economic inequality and mobility.  Joel and Jason are working on a project examining the intergenerational transmission of socioeconomic status and health funded by the Russell Sage Foundation.",
       "url" : "zjdgbdzv"
     }, {
-      "img_src" : "angela.jpg",
+      "img_src" : "s3.jpg",
       "name" : "Angela Forgues",
       "short_des" : "Angela is a fourth-year PhD student in Sociology     Angela and Jason are working on gene-environment interactions research  Angela presented some of this work with Justin Cook at PAA in 2016",
       "url" : "zjdgbdzv"
     }, {
-      "img_src" : "jessica.jpg",
+      "img_src" : "s4.jpg",
       "name" : "Jessica Polos",
       "short_des" : "Jessica is a third-year PhD student in Sociology  Jessica and Jason are working on examining the intergeneration transmission of health and education and the intersection of genetics and fertility. A current project examines the impacts of the rapid rise in C-section rates in the US.  Jessica presented this work at PAA in 2015",
       "url" : "zjdgbdzv"
     }, {
-      "img_src" : "jingying.jpg",
+      "img_src" : "s5.jpg",
       "name" : "Jingying He",
       "short_des" : "Jingying is a third year PhD student in Sociology.  Jingying and Jason are working on projects related to multigenerational effects of early conditions.",
       "url" : "zjdgbdzv"
     }, {
-      "img_src" : "jihye.jpg",
+      "img_src" : "s6.jpg",
       "name" : "Jihye Kam",
       "short_des" : "Jihye is a fifth year PhD student in Education Leadership and Policy Analysis.  Jihye and Jason are working on projects related to STEM major choice and peer effects.",
       "url" : "zjdgbdzv"
     }, {
-      "img_src" : "wontak.jpg",
+      "img_src" : "s7.jpg",
       "name" : "Won-tak Joo",
       "short_des" : "Won-tak is a first year PhD student in Sociology.  Won-tak and Jason are working on projects related to social network analysis and college rankings as well as impacts of network position on adolescent outcomes.",
       "url" : "zjdgbdzv"
@@ -79,42 +79,42 @@
     "MaxHeightForMemberContainer" : "1100px",
     "heading" : "Masters and Undergraduate Students",
     "values" : [ {
-      "img_src" : "anshul.jpg",
+      "img_src" : "s8.jpg",
       "name" : "Anshul Purokit",
       "short_des" : "Anshul is a masters student in computer science.  Anshul and Jason are working on projects that intergrate machine learning into policy analysis.",
       "url" : "zjdgbdzv"
     }, {
-      "img_src" : "cody.jpg",
+      "img_src" : "s9.jpg",
       "name" : "Cody Oltmans",
       "short_des" : "Cody is a masters student in the La Follette School of Public Affairs  Jason and Cody are working on a project examining educational mobility patterns in the US.",
       "url" : "zjdgbdzv"
     }, {
-      "img_src" : "max.jpg",
+      "img_src" : "s10.jpg",
       "name" : "Max Pardo",
       "short_des" : "Max is a masters student in the La Follette School of Public Affairs  Jason and Max are working on several projects",
       "url" : "zjdgbdzv"
     }, {
-      "img_src" : "xvnb",
+      "img_src" : "s11.jpg",
       "name" : "New Publications",
       "short_des" : "kjxhv",
       "url" : "zjdgbdzv"
     }, {
-      "img_src" : "xvnb",
+      "img_src" : "s12.jpg",
       "name" : "New Publications",
       "short_des" : "kjxhv",
       "url" : "zjdgbdzv"
     }, {
-      "img_src" : "xvnb",
+      "img_src" : "s13.jpg",
       "name" : "New Publications",
       "short_des" : "kjxhv",
       "url" : "zjdgbdzv"
     }, {
-      "img_src" : "xvnb",
+      "img_src" : "s14.jpg",
       "name" : "New Publications",
       "short_des" : "kjxhv",
       "url" : "zjdgbdzv"
     }, {
-      "img_src" : "xvnb",
+      "img_src" : "s15.jpg",
       "name" : "New Publications",
       "short_des" : "kjxhv",
       "url" : "zjdgbdzv"
@@ -123,7 +123,7 @@
   "projects" : [ {
     "funding" : "None",
     "heading" : "The Influence of Classmates on Adolescent Crime",
-    "img_src" : "crimenetworks.jpg",
+    "img_src" : "400X200.gif",
     "medium_desc" : "zmfbkzvjbfxfkjfv",
     "publications" : [ {
       "heading" : "The Influence of Classmates on Adolescent Criminal Activities in the United States",
@@ -141,12 +141,12 @@
     } ],
     "research_summary" : "This article examines the effect of delinquent peers on an individual’s criminal activity by leveraging quasi-experimental variation in exposure to peers, separating confounding and causal effects. In particular, we examine the role of wider peer networks (i.e., classmates) as a critical source of influence on adolescents’ delinquent behavior. Using a combined instrumental variables/fixed effects methodology, we address important methodological challenges in estimating peer effects. Results suggest that increasing the proportion of peers who engage in criminal activities by 5% will increase the likelihood an individual engages in criminal activities by 3 percentage points.",
     "short_des" : "kjxhv",
-    "study_img" : "new_publications.jpg",
+    "study_img" : "new_publications.gif",
     "url" : "project_detail.html"
   }, {
     "funding" : "mnvbkjv,",
     "heading" : "How Important are Children's Neighborhoods for Adult Health?",
-    "img_src" : "neighborhoodshealth.jpg",
+    "img_src" : "400X200.gif",
     "medium_desc" : "zmfbkzvjbfxfkjfv",
     "publications" : [ {
       "heading" : "zzvn",
@@ -169,7 +169,7 @@
   }, {
     "funding" : "mnvbkjv,",
     "heading" : "Are there Interactions between Environments and Genetic Variants in Determining Adult Cogntive and Labor Market Outcomes?",
-    "img_src" : "gxe.jpg",
+    "img_src" : "400X200.gif",
     "medium_desc" : "zmfbkzvjbfxfkjfv",
     "publications" : [ {
       "heading" : "zzvn",
@@ -192,7 +192,7 @@
   }, {
     "funding" : "mnvbkjv,",
     "heading" : "How do schools shape the intergenerational transmission of socioeconomic status?",
-    "img_src" : "intergen.jpg",
+    "img_src" : "400X200.gif",
     "medium_desc" : "zmfbkzvjbfxfkjfv",
     "publications" : [ {
       "heading" : "zzvn",
@@ -215,7 +215,7 @@
   }, {
     "funding" : "mnvbkjv,",
     "heading" : "The Genome Factor",
-    "img_src" : "genomefactor.jpg",
+    "img_src" : "400X200.gif",
     "medium_desc" : "Princeton University Press",
     "publications" : [ {
       "heading" : "Available at Amazon",
@@ -238,7 +238,7 @@
   }, {
     "funding" : "mnvbkjv,",
     "heading" : "How do adults choose their spouses?",
-    "img_src" : "spouses.jpg",
+    "img_src" : "400X200.gif",
     "medium_desc" : "zmfbkzvjbfxfkjfv",
     "publications" : [ {
       "heading" : "zzvn",
@@ -256,12 +256,12 @@
     } ],
     "research_summary" : "nmbvkj,mv,v",
     "short_des" : "kjxhv",
-    "study_img" : "spouses.jpg",
+    "study_img" : "spouses.gif",
     "url" : "project_detail.html"
   }, {
     "funding" : "NIDA R03 Causal Spousal Spillover Effects 07/01/2015-06/30/2017 $144,000 PI: Fletcher Co-I: Weimer Student: Ryne Marksteiner",
     "heading" : "How important are spousal peer effects?",
-    "img_src" : "spousesmoking.jpg",
+    "img_src" : "400X200.gif",
     "medium_desc" : "NIDA Funded",
     "publications" : [ {
       "heading" : "Causal Spousal Health Spillover Effects and Implications for Program Evaluation",
@@ -279,12 +279,12 @@
     } ],
     "research_summary" : "Current methods of cost effectiveness analysis implicitly assume zero spillovers among social ties. This can underestimate the benefits of health interventions and misallocate resources toward interventions with lower comprehensive effects. We discuss the implications of social spillovers for program evaluation and document the first evidence of causal spillovers of health behaviors between spouses by leveraging experimental data from the Lung Health Study (smoking) and COMBINE Study (drinking). We find large decreases in spousal substance use from treatments with a therapy component, which reduces the incremental cost effectiveness ratios of some treatments by 12 to 18 percent.",
     "short_des" : "kjxhv",
-    "study_img" : "spousesmoking.jpg",
+    "study_img" : "spousesmoking.gif",
     "url" : "project_detail.html"
   }, {
     "funding" : "mnvbkjv,",
     "heading" : "Multigenerational Effects of Health Shocks",
-    "img_src" : "multigen.jpg",
+    "img_src" : "400X200.gif",
     "medium_desc" : "zmfbkzvjbfxfkjfv",
     "publications" : [ {
       "heading" : "zzvn",
@@ -307,7 +307,7 @@
   }, {
     "funding" : "mnvbkjv",
     "heading" : "New Publications",
-    "img_src" : "new_publications",
+    "img_src" : "400X200.gif",
     "medium_desc" : "zmfbkzvjbfxfkjfv",
     "publications" : [ {
       "heading" : "zzvn",
